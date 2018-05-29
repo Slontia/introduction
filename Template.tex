@@ -1,0 +1,153 @@
+\documentclass{llncs}
+%
+\usepackage{amsfonts}
+\usepackage{amstext}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage[center]{subfigure}
+\usepackage{amssymb}
+\usepackage{graphicx,amsmath} % Add all your packages here
+\usepackage{subfigure}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\renewcommand{\algorithmicrequire}{ \textbf{Input:}}
+\renewcommand{\algorithmicensure}{ \textbf{Output:}}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{color}
+%
+\usepackage{CJK}
+
+\begin{document}
+\begin{CJK}{UTF8}{song}
+\title{基于深度传感器和TSDF的三维立体重建技术}
+\author{刘畅}
+\institute{School of Computer Science and Engineering, Beihang University, Beijing, China\\}
+\maketitle
+
+\begin{abstract}
+本篇文献综述所讲述的主要内容是基于深度传感器，利用TSDF等算法实现由深度图像到三维立体模型的转换。
+\keywords{斯蒂芬是否, Keywords2, Keywords3}
+\end{abstract}
+
+\section{Introduction}
+
+计算机视觉是一门研究如何通过视觉传感器捕捉到的信息，对物体进行识别、分析的学科，而三维立体重建技术正是其子领域。现如今，三维立体重建技术被广泛应用于文物保护、游戏开发、医学研究、地图绘制等领域，例如通过将传感器安装到机器人身体上，机器人可以根据扫描到的场景信息控制移动，完成任务，具有广阔的前景。
+
+三维重建的主要目的是根据传感器对某一物体或场景捕获到的若干图像或一段视频，将物体或场景通过一系列技术手段还原成三维立体模型。模型的重建主要依赖于深度相机，这种相机可以同时获取RGB图像和深度图像，前者记录被拍摄位置的颜色、亮度、饱和度等信息，后者通过某处灰度值大小反映出对应位置与相机间的距离，以此可以得到被拍摄场景的单方向模型。
+
+目前，三维立体重建技术的主要难点是对相机移动的路径进行估算，以确定相邻两幅图形间的位置关系，以及图像的去燥、模型空洞的补全等等。这篇论文主要针对这些难点，论述近年来相关重建方法的种类以及改进方法。
+
+\section{三维空间还原}
+
+将深度照相机所获取的RGB图像与深度图像相结合，可以重建出每一个像素点在三维空间中的位置。设图像上某像素点$(p_x,P-y)$，通过深度图像$I_d$可以获得该像素点的深度值
+
+\begin{equation}
+\label{xy2z}
+	z = I_d(p_x,p_y)
+\end{equation}
+
+根据公式\ref{xy2z}得到的结果，利用图像中心的坐标$(c_x,c_y)$和相机镜头到图片平面的距离$f$，可以通过函数$\rho$得到像素点$(p_x,P_y)$对应的三维坐标
+
+\begin{equation}
+	\rho(p_x,p_y,z) = (\frac{p_x-c_x}{f}z,\frac{p_y-c_y}{f}z,z)
+\end{equation}
+
+我们将每组图像中每个像素还原得到的三维点的集合称为“点云(Point Cloud)”。
+
+\section{相机定位}
+在三维空间还原中，每幅图像生成的点云所属的坐标系是以相机所处位置为基准确定的，但相机在拍摄的过程中是保持移动的，因此不同点云采用的是不同的坐标系。为了将不同点云进行融合，必须要统一坐标系，因此必须确定相机所处的位置。
+
+拍摄相邻两幅图像时相机的位置变化可以用旋转量$R$和位移量$t$来表示，目前重要有两种方法来对$R$和$t$进行估算。
+
+	\subsection{迭代最近点(Iterated Closest Point, ICP)}
+
+迭代最近点的主要工作是对两组相邻点云进行点与点之间的配对，然后计算出旋转量$R$和位移量$t$，将其中一组点云转化为另一组点云，并使得花费$E$最小\cite{DBLP:journals/pami/BeslM92}。其中，$E$的计算方式是转换后两组点云中对应点的位置差异之和。
+
+我们假设原点云为$x_1,x_2,...,x_n$，目标点云为$y_1,y_2,...,y_n$，则需要最小化的花费可表示为
+
+\begin{equation}
+\label{cloudpoint_min}
+	E(R,t) = \sum_{i=1}^n||Rx_i+t-y_i||^p
+\end{equation}
+
+对于已经确定配对关系$(x_i,x_i)$的两组点云，通过调整$R$和$t$的值，使得公式\ref{cloudpoint_min}的值降到最低。对于指数$p$的取值，通常为$p=1$或$p=2$。
+
+然而，找到最符合实际变化的旋转量$R$和位移量$t$的前提是配对$(x_i,x_i)$的正确。为了提高配对的准确性，这里采用迭代的方式不断优化点云间的配对关系。主要步骤如下：
+
+\begin{enumerate}
+\item{决定初始的配对关系}
+\item{利用公式\ref{cloudpoint_min}找到合适的旋转量$R$和位移量$t$}
+\item{采用此种转换方式对原点云$x$进行转换，得到转换后的原点云}
+\item{重复步骤1\~{}3直到$E(R,t)$的值不发生明显变化}
+\end{enumerate}
+
+当原点云与目标点云差异较小的时候，这种方法有较大概率找到全局最优解；但是当原点云和目标点云差异较大的时候，往往会使结果陷入局部最优解。
+
+在此基础上，一种采用结合了法线的改进方法被提出\cite{Chen1992Object}，这种方法以最小化原点云中$x_i$的法线$n_i$与$x_i$和$y_i$间连线$L(x_i,y_i)$投影之和的方式代替了原来的单纯地最小化两点间距离之和的方法，即
+
+\begin{equation}
+E'(R,t) = |(Rx_i+t-y_i)^Tn_i|^p
+\end{equation}
+
+ICP方法具有它的局限性，对于点云上所有点位于同一平面的情况，用ICP方法求解得到旋转量$R$和位移量$t$并不唯一。
+
+	\subsection{映射强度差异}
+
+对于每组图像中的深度图像$I^n_d$和RGB图像$I^n_c$，其下一组图像中深度图像和RGB图像分别为$I^{n+1}_d$和$I^{n+1}_c$。映射强度差异方法的主要工作是先根据$(I^n_d,I^n_c)$还原出点云$P^n$，之后选取适当的旋转量$R$和位移量$t$对$P^n$进行变换，并映射到平面上。在理想情况下，映射到平面上的RGB图像应当与$I^{n+1}_c$完全一致，
+
+\section{主要的表面生成方法}
+
+点云所表现出的结果是离散的，于是接下来的工作是，根据每一组图像得到的点云生成连续的物体表面，并将所有图像所生成的结果合并，得到完整的三维模型。目前两种方法被应用得较为广泛，分别是截断有向距离函数(Truncated Signed Distance Function, TSDF)和八叉树(Octrees)。
+
+\subsection{截断有向距离函数}
+
+早期一种利用截断有向距离函数(truncated signed distance function, TSDF)生成模型表面的做法\cite{DBLP:conf/siggraph/CurlessL96}曾被提出，其主要原理是对于单幅深度图像，三维空间中某一点$p$可用函数$d(p)$表示到表面的距离：当$d(p)>0$的时候，认为$p$在表面后方（远离相机位置）；当$d(p)<0$的时候，认为$p$在表面前方（靠近相机位置）；而当$d(p)=0$的时候，即可认为$p$正好处于表面上。
+
+对于由深度图像像素还原得到的点$P_0$，可以认为$d(p_0)$接近于0。为了提高结果的准确性，这里对于表面附近不同图像、不同位置的点，分别给予了不同的权重w，利用各个点的权重$d(p)$和距离函数$w(p)$，根据公式\ref{D_cal}和\ref{W_cal}对空间中划分的离散体素网格进行权重$W$和距离$D$的更新，最终得到一个较为准确的$D(p)=0$的表面。
+
+\begin{equation}
+\label{D_cal}
+	D(p) = \frac{\sum w_i(p)d_i(p)}{\sum w_i(p)}
+\end{equation}
+
+\begin{equation}
+\label{W_cal}
+	W(p) = \sum w_i(p)
+\end{equation}
+
+但是当这种方法被应用于较大模型重建的时候，由于信息量的增多，会导致内存消耗很大。
+
+
+%在此方法的基础上，\cite{DBLP:conf/rss/KlingensmithDSX15}和\cite{Whelan2013Deformation}
+
+
+%采用了一种截断有向距离函数(Signed Distance Function, TSDF)
+
+%TSDF是主要应用在三维重建技术中的一种确定模型表面的方法，是对Signed Distance Function(SDF)的一种改进。
+
+\subsection{八叉树}
+八叉树是一种每个父节点拥有八个子节点的树\cite{Wurm2010OctoMap}，树中的每个结点都可用来表示空间中的一个立方体，每个子节点所代表的立方体都是父节点立方体的$\frac{1}{8}$，如图\ref{Octree}所示。用八叉树表示空间的方式的优点是可以动态地调整空间的精细度，当需要对物体进行更高精度的描绘时，可以增加八叉树的深度，细化空间单位；当需要节省内存的时候，可以使用较大的立方体表示空间，提高效率。
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{picts/octree.png}
+\caption{递归分割空间的八叉树}
+\label{Octree}
+\end{figure}
+
+利用八叉树绘制表面的方式是对立方体进行标记——如果该立方体占有的空间中包含了表面上的点，那么就将该立方体细分并标记为“占有”，否则就将其标记为“空闲”。这种方式更加高效，可以处理规模较大的模型。
+
+\section{Related Work}
+
+
+\subsubsection*{Acknowledgements}
+This work was partially supported by the National Natural Science Foundation of China (No. 61332018), the National Department Public Benefit Research Foundation (No. 201510209), and the Fundamental Research Funds for the Central Universities.
+
+\bibliographystyle{splncs03}
+%\bibliographystyle{unsrt}
+\bibliography{reference}
+\end{CJK}{UTF8}{song}
+\end{document}

@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{DBLP:journals/pami/BeslM92}
+Besl, P.J., McKay, N.D.: A method for registration of 3-d shapes. {IEEE} Trans.
+  Pattern Anal. Mach. Intell.  14(2),  239--256 (1992),
+  \url{https://doi.org/10.1109/34.121791}
+
+\bibitem{Chen1992Object}
+Chen, Y., Medioni, G.: Object modelling by registration of multiple range
+  images. Image \& Vision Computing  10(3),  145--155 (1992)
+
+\bibitem{DBLP:conf/siggraph/CurlessL96}
+Curless, B., Levoy, M.: A volumetric method for building complex models from
+  range images. In: Proceedings of the 23rd Annual Conference on Computer
+  Graphics and Interactive Techniques, {SIGGRAPH} 1996, New Orleans, LA, USA,
+  August 4-9, 1996. pp. 303--312 (1996)
+
+\bibitem{Wurm2010OctoMap}
+Wurm, K.M., Hornung, A., Bennewitz, M., Stachniss, C., Burgard, W.: Octomap: A
+  probabilistic, flexible, and compact 3d map representation for robotic
+  systems. In: Proc. of the ICRA Workshop on Best Practice in 3D Perception and
+  Modeling for Mobile Manipulation (2010)
+
+\end{thebibliography}
