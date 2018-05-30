@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 
@@ -16,6 +16,58 @@ Curless, B., Levoy, M.: A volumetric method for building complex models from
   range images. In: Proceedings of the 23rd Annual Conference on Computer
   Graphics and Interactive Techniques, {SIGGRAPH} 1996, New Orleans, LA, USA,
   August 4-9, 1996. pp. 303--312 (1996)
+
+\bibitem{DBLP:conf/eccv/KahlerPM16}
+K{\"{a}}hler, O., Prisacariu, V.A., Murray, D.W.: Real-time large-scale dense
+  3d reconstruction with loop closure. In: Computer Vision - {ECCV} 2016 - 14th
+  European Conference, Amsterdam, The Netherlands, October 11-14, 2016,
+  Proceedings, Part {VIII}. pp. 500--516 (2016)
+
+\bibitem{6631104}
+Kerl, C., Sturm, J., Cremers, D.: Robust odometry estimation for rgb-d cameras.
+  In: 2013 IEEE International Conference on Robotics and Automation. pp.
+  3748--3754 (May 2013)
+
+\bibitem{Kerl2013Large}
+Kerl, C., Cremers, D.: Large-scale multi-resolution surface reconstruction from
+  rgb-d sequences. In: IEEE International Conference on Computer Vision. pp.
+  3264--3271 (2013)
+
+\bibitem{DBLP:conf/iros/KerlSC13}
+Kerl, C., Sturm, J., Cremers, D.: Dense visual {SLAM} for {RGB-D} cameras. In:
+  2013 {IEEE/RSJ} International Conference on Intelligent Robots and Systems,
+  Tokyo, Japan, November 3-7, 2013. pp. 2100--2106 (2013)
+
+\bibitem{DBLP:conf/cimaging/KubackiBBD12}
+Kubacki, D.B., Bui, H.Q., Babacan, S.D., Do, M.N.: Registration and integration
+  of multiple depth images using signed distance function. In: Computational
+  Imaging X, part of the IS{\&}T-SPIE Electronic Imaging Symposium, Burlingame,
+  California, USA, January 23-24, 2012, Proceedings. p. 82960Z (2012)
+
+\bibitem{DBLP:conf/ismar/NewcombeIHMKDKSHF11}
+Newcombe, R.A., Izadi, S., Hilliges, O., Molyneaux, D., Kim, D., Davison, A.J.,
+  Kohli, P., Shotton, J., Hodges, S., Fitzgibbon, A.W.: Kinectfusion: Real-time
+  dense surface mapping and tracking. In: 10th {IEEE} International Symposium
+  on Mixed and Augmented Reality, {ISMAR} 2011, Basel, Switzerland, October
+  26-29, 2011. pp. 127--136 (2011)
+
+\bibitem{DBLP:conf/eccv/RenR12}
+Ren, C.Y., Reid, I.D.: A unified energy minimization framework for model
+  fitting in depth. In: Computer Vision - {ECCV} 2012. Workshops and
+  Demonstrations - Florence, Italy, October 7-13, 2012, Proceedings, Part {II}.
+  pp. 72--82 (2012)
+
+\bibitem{DBLP:conf/iccvw/SteinbruckerSC11}
+Steinbr{\"{u}}cker, F., Sturm, J., Cremers, D.: Real-time visual odometry from
+  dense {RGB-D} images. In: {IEEE} International Conference on Computer Vision
+  Workshops, {ICCV} 2011 Workshops, Barcelona, Spain, November 6-13, 2011. pp.
+  719--722 (2011)
+
+\bibitem{DBLP:journals/ijcv/UrbanWLH17}
+Urban, S., Wursthorn, S., Leitloff, J., Hinz, S.: Multicol bundle adjustment:
+  {A} generic method for pose estimation, simultaneous self-calibration and
+  reconstruction for arbitrary multi-camera systems. International Journal of
+  Computer Vision  121(2),  234--252 (2017)
 
 \bibitem{Wurm2010OctoMap}
 Wurm, K.M., Hornung, A., Bennewitz, M., Stachniss, C., Burgard, W.: Octomap: A

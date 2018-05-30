@@ -52,15 +52,61 @@
 根据公式\ref{xy2z}得到的结果，利用图像中心的坐标$(c_x,c_y)$和相机镜头到图片平面的距离$f$，可以通过函数$\rho$得到像素点$(p_x,P_y)$对应的三维坐标
 
 \begin{equation}
+\label{get3dpoint}
 	\rho(p_x,p_y,z) = (\frac{p_x-c_x}{f}z,\frac{p_y-c_y}{f}z,z)
 \end{equation}
 
 我们将每组图像中每个像素还原得到的三维点的集合称为“点云(Point Cloud)”。
 
-\section{相机定位}
-在三维空间还原中，每幅图像生成的点云所属的坐标系是以相机所处位置为基准确定的，但相机在拍摄的过程中是保持移动的，因此不同点云采用的是不同的坐标系。为了将不同点云进行融合，必须要统一坐标系，因此必须确定相机所处的位置。
 
-拍摄相邻两幅图像时相机的位置变化可以用旋转量$R$和位移量$t$来表示，目前重要有两种方法来对$R$和$t$进行估算。
+\section{主要的表面生成方法}
+
+点云所表现出的结果是离散的，于是接下来的工作是，根据每一组图像得到的点云生成连续的物体表面，并将所有图像所生成的结果合并，得到完整的三维模型。目前两种方法被应用得较为广泛，分别是截断有向距离函数(Truncated Signed Distance Function, TSDF)和八叉树(Octrees)。
+
+	\subsection{截断有向距离函数}
+
+早期一种利用截断有向距离函数(truncated signed distance function, TSDF)生成模型表面的做法\cite{DBLP:conf/siggraph/CurlessL96}曾被提出，其主要原理是对于单幅深度图像，三维空间中某一点$p$可用函数$d(p)$表示到表面的距离：当$d(p)>0$的时候，认为$p$在表面后方（远离相机位置）；当$d(p)<0$的时候，认为$p$在表面前方（靠近相机位置）；而当$d(p)=0$的时候，即可认为$p$正好处于表面上。
+
+对于由深度图像像素还原得到的点$P_0$，可以认为$d(p_0)$接近于0。为了提高结果的准确性，这里对于表面附近不同图像、不同位置的点，分别给予了不同的权重w，利用各个点的权重$d(p)$和距离函数$w(p)$，根据公式\ref{D_cal}和\ref{W_cal}对空间中划分的离散体素网格进行权重$W$和距离$D$的更新，最终得到一个较为准确的$D(p)=0$的表面。
+
+\begin{equation}
+\label{D_cal}
+	D(p) = \frac{\sum w_i(p)d_i(p)}{\sum w_i(p)}
+\end{equation}
+
+\begin{equation}
+\label{W_cal}
+	W(p) = \sum w_i(p)
+\end{equation}
+
+但是当这种方法被应用于较大模型重建的时候，由于信息量的增多，会导致内存消耗很大。
+
+
+%在此方法的基础上，\cite{DBLP:conf/rss/KlingensmithDSX15}和\cite{Whelan2013Deformation}
+
+
+%采用了一种截断有向距离函数(Signed Distance Function, TSDF)
+
+%TSDF是主要应用在三维重建技术中的一种确定模型表面的方法，是对Signed Distance Function(SDF)的一种改进。
+
+	\subsection{八叉树}
+八叉树是一种每个父节点拥有八个子节点的树\cite{Wurm2010OctoMap}，树中的每个结点都可用来表示空间中的一个立方体，每个子节点所代表的立方体都是父节点立方体的$\frac{1}{8}$，如图\ref{Octree}所示。用八叉树表示空间的方式的优点是可以动态地调整空间的精细度，当需要对物体进行更高精度的描绘时，可以增加八叉树的深度，细化空间单位；当需要节省内存的时候，可以使用较大的立方体表示空间，提高效率。
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{picts/octree.png}
+\caption{递归分割空间的八叉树}
+\label{Octree}
+\end{figure}
+
+利用八叉树绘制表面的方式是对立方体进行标记——如果该立方体占有的空间中包含了表面上的点，那么就将该立方体细分并标记为“占有”，否则就将其标记为“空闲”。这种方式更加高效，可以处理规模较大的模型。
+
+
+\section{相机追踪与模型生成}
+
+所谓相机追踪，是指在三维空间还原中，每幅图像生成的点云所属的坐标系是以相机所处位置为基准确定的，但相机在拍摄的过程中是保持移动的，因此不同点云采用的是不同的坐标系。为了将不同点云进行融合，必须要统一坐标系，因此必须确定相机所处的位置。
+
+拍摄相邻两幅图像时相机的位置变化可以用旋转量$R$和位移量$t$来表示，目前有很多方法可以实现对$R$和$t$的估算。在确定了相机的位置之后，就可以综合之前生成表面的方法，对被拍摄物体或场景进行模型的生成。
 
 	\subsection{迭代最近点(Iterated Closest Point, ICP)}
 
@@ -94,60 +140,31 @@ E'(R,t) = |(Rx_i+t-y_i)^Tn_i|^p
 
 ICP方法具有它的局限性，对于点云上所有点位于同一平面的情况，用ICP方法求解得到旋转量$R$和位移量$t$并不唯一。
 
-	\subsection{映射强度差异}
+2011年，微软提出了一种经典的重建模型方法——KinectFusion。KinectFusion\cite{DBLP:conf/ismar/NewcombeIHMKDKSHF11}的伟大之处在于它实现了通过传感器实时生成3D模型的功能，具有极高的实用性。它使用ICP方法进行相机移动路径的追踪，使用TSDF方法有效地对中等大小的模型进行表面构造，并使用\cite{DBLP:conf/siggraph/CurlessL96}的方法建立3D模型。
 
-对于每组图像中的深度图像$I^n_d$和RGB图像$I^n_c$，其下一组图像中深度图像和RGB图像分别为$I^{n+1}_d$和$I^{n+1}_c$。映射强度差异方法的主要工作是先根据$(I^n_d,I^n_c)$还原出点云$P^n$，之后选取适当的旋转量$R$和位移量$t$对$P^n$进行变换，并映射到平面上。在理想情况下，映射到平面上的RGB图像应当与$I^{n+1}_c$完全一致，
+有很多类似的方法曾被提出\cite{DBLP:conf/cimaging/KubackiBBD12,DBLP:conf/eccv/RenR12}，但是前者使用的测试数据是人造的，且缺乏合理的评估方法；后者的SDF函数是已知的，且缺乏实时性。KinectFusion可以进行可靠的即时渲染，并同时生成两组点云——一组是根据当前深度图像生成的，另一组是之前所有深度图像生成点云的合并，当所有图像都被处理完毕后，后者即为全局的点云结果。
 
-\section{主要的表面生成方法}
 
-点云所表现出的结果是离散的，于是接下来的工作是，根据每一组图像得到的点云生成连续的物体表面，并将所有图像所生成的结果合并，得到完整的三维模型。目前两种方法被应用得较为广泛，分别是截断有向距离函数(Truncated Signed Distance Function, TSDF)和八叉树(Octrees)。
+	\subsection{图像一致性比对}
 
-\subsection{截断有向距离函数}
-
-早期一种利用截断有向距离函数(truncated signed distance function, TSDF)生成模型表面的做法\cite{DBLP:conf/siggraph/CurlessL96}曾被提出，其主要原理是对于单幅深度图像，三维空间中某一点$p$可用函数$d(p)$表示到表面的距离：当$d(p)>0$的时候，认为$p$在表面后方（远离相机位置）；当$d(p)<0$的时候，认为$p$在表面前方（靠近相机位置）；而当$d(p)=0$的时候，即可认为$p$正好处于表面上。
-
-对于由深度图像像素还原得到的点$P_0$，可以认为$d(p_0)$接近于0。为了提高结果的准确性，这里对于表面附近不同图像、不同位置的点，分别给予了不同的权重w，利用各个点的权重$d(p)$和距离函数$w(p)$，根据公式\ref{D_cal}和\ref{W_cal}对空间中划分的离散体素网格进行权重$W$和距离$D$的更新，最终得到一个较为准确的$D(p)=0$的表面。
+对于每组图像中的深度图像$I^n_d$和RGB图像$I^n_c$，其下一组图像中深度图像和RGB图像分别为$I^{n+1}_d$和$I^{n+1}_c$。图像一致性比对方法的主要工作是先利用公式\ref{get3dpoint}，根据$(I^n_d,I^n_c)$还原出点云$P^n$，之后选取适当的旋转量$R$和位移量$t$对$P^n$进行变换，并映射到平面$\pi$上\cite{DBLP:conf/iccvw/SteinbruckerSC11}。在理想情况下，映射到平面$\pi$上的RGB图像应当与$I^{n+1}_c$完全一致。但由于误差的存在以及$(R,t)$的选取，两图像间应当存在差异，这时需要动态调整$(R,t)$的选值，尽可能减少$I^{n+1}_c$上各点$(i,j)$和平面上对应点$\pi(p)$的色度差异，其差异可用公式\ref{IBMdif}表示：
 
 \begin{equation}
-\label{D_cal}
-	D(p) = \frac{\sum w_i(p)d_i(p)}{\sum w_i(p)}
+\label{IBMdif}
+E(R,t) = \sum^m_{i=1}\sum^n_{j=1}||I^{n+1}_c(i,j)-I^n_c(\pi(R\rho(i,j,z_{ij})+t))||^2
 \end{equation}
 
-\begin{equation}
-\label{W_cal}
-	W(p) = \sum w_i(p)
-\end{equation}
+其中，$z_{ij}$是根据公式\ref{xy2z}得到的图像$I^n_d$中点$(i,j)$的深度值，$m$和$n$表示图像的高度和宽度。除了色度差异外，这种方法也可通过比较深度差异进行$(R,t)$的计算\cite{Kerl2013Large}。和ICP不同的是，ICP是对两组图像生成的点云进行比较，而图像一致性比对是对二维图像进行比较，其优点在于有效利用了图像的色度信息，并且不需要对两组点云中的点进行匹配。
 
-但是当这种方法被应用于较大模型重建的时候，由于信息量的增多，会导致内存消耗很大。
+有很多基于图像一致性比对的模型生成技术\cite{6631104,DBLP:conf/iros/KerlSC13}，但是它们共性的缺点是生成的效果与实际误差较大，这是由于对相机移动路径的错误估计造成的。在图像一致性比对方法中，每一次计算出的旋转量和位移量具有一定误差，这种误差会随着图像组数的增多而累积，最终导致生成的模型与实际具有较大的偏差。目前，有很多减小误差的方法，例如loop-closure\cite{DBLP:conf/eccv/KahlerPM16}和bundle-adjustment\cite{DBLP:journals/ijcv/UrbanWLH17}。
 
+	\subsection{图像关键点比对}
 
-%在此方法的基础上，\cite{DBLP:conf/rss/KlingensmithDSX15}和\cite{Whelan2013Deformation}
+图像关键点比对方法是找出相邻两组图像之间一致的“关键点”
 
-
-%采用了一种截断有向距离函数(Signed Distance Function, TSDF)
-
-%TSDF是主要应用在三维重建技术中的一种确定模型表面的方法，是对Signed Distance Function(SDF)的一种改进。
-
-\subsection{八叉树}
-八叉树是一种每个父节点拥有八个子节点的树\cite{Wurm2010OctoMap}，树中的每个结点都可用来表示空间中的一个立方体，每个子节点所代表的立方体都是父节点立方体的$\frac{1}{8}$，如图\ref{Octree}所示。用八叉树表示空间的方式的优点是可以动态地调整空间的精细度，当需要对物体进行更高精度的描绘时，可以增加八叉树的深度，细化空间单位；当需要节省内存的时候，可以使用较大的立方体表示空间，提高效率。
-
-\begin{figure}
-\centering
-\includegraphics[width=0.8\textwidth]{picts/octree.png}
-\caption{递归分割空间的八叉树}
-\label{Octree}
-\end{figure}
-
-利用八叉树绘制表面的方式是对立方体进行标记——如果该立方体占有的空间中包含了表面上的点，那么就将该立方体细分并标记为“占有”，否则就将其标记为“空闲”。这种方式更加高效，可以处理规模较大的模型。
-
-\section{Related Work}
-
-
-\subsubsection*{Acknowledgements}
-This work was partially supported by the National Natural Science Foundation of China (No. 61332018), the National Department Public Benefit Research Foundation (No. 201510209), and the Fundamental Research Funds for the Central Universities.
 
 \bibliographystyle{splncs03}
 %\bibliographystyle{unsrt}
 \bibliography{reference}
 \end{CJK}{UTF8}{song}
-\end{document}
+\end{document} 
