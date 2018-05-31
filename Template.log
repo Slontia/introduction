@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.26)  30 MAY 2018 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.26)  31 MAY 2018 10:12
 entering extended mode
 **C:/Users/65486_000/Desktop/LNCS‰Ωú‰∏öÊ®°ÊùøLatex/Template.tex
 (C:/Users/65486_000/Desktop/LNCS‰Ωú‰∏öÊ®°ÊùøLatex/Template.tex
@@ -197,21 +197,41 @@ Package amsmath Warning: Unable to redefine math accent \vec.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-) ("D:\Program Files\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
+) ("D:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen134
+\lightrulewidth=\dimen135
+\cmidrulewidth=\dimen136
+\belowrulesep=\dimen137
+\belowbottomsep=\dimen138
+\aboverulesep=\dimen139
+\abovetopsep=\dimen140
+\cmidrulesep=\dimen141
+\cmidrulekern=\dimen142
+\defaultaddspace=\dimen143
+\@cmidla=\count128
+\@cmidlb=\count129
+\@aboverulesep=\dimen144
+\@belowrulesep=\dimen145
+\@thisruleclass=\count130
+\@lastruleclass=\count131
+\@thisrulewidth=\dimen146
+)
+("D:\Program Files\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enitkv@toks@=\toks24
 \labelindent=\skip48
-\enit@outerparindent=\dimen134
+\enit@outerparindent=\dimen147
 \enit@toks=\toks25
 \enit@inbox=\box56
-\enitdp@description=\count128
+\enitdp@description=\count132
 )
 ("D:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip49
-\multirow@cntb=\count129
+\multirow@cntb=\count133
 \multirow@dima=\skip50
-\bigstrutjot=\dimen135
+\bigstrutjot=\dimen148
 )
 ("D:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -234,21 +254,21 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 ("D:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
 File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen136
-\Gin@req@width=\dimen137
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
 )
 ("D:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
 \subfigtopskip=\skip51
 \subfigcapskip=\skip52
-\subfigcaptopadj=\dimen138
+\subfigcaptopadj=\dimen151
 \subfigbottomskip=\skip53
-\subfigcapmargin=\dimen139
+\subfigcapmargin=\dimen152
 \subfiglabelskip=\skip54
-\c@subfigure=\count130
-\c@lofdepth=\count131
-\c@subtable=\count132
-\c@lotdepth=\count133
+\c@subfigure=\count134
+\c@lofdepth=\count135
+\c@subtable=\count136
+\c@lotdepth=\count137
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -266,7 +286,7 @@ nment
 
 ("D:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count134
+\c@float@type=\count138
 \float@exts=\toks27
 \float@box=\box57
 \@float@everytoks=\toks28
@@ -276,14 +296,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks29
-\c@algorithm=\count135
+\c@algorithm=\count139
 )
 ("D:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty"
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count136
-\c@ALC@line=\count137
-\c@ALC@rem=\count138
-\c@ALC@depth=\count139
+\c@ALC@unique=\count140
+\c@ALC@line=\count141
+\c@ALC@rem=\count142
+\c@ALC@depth=\count143
 \ALC@tlm=\skip57
 \algorithmicindent=\skip58
 )
@@ -318,95 +338,95 @@ LaTeX Info: Redefining \selectfont on input line 755.
 ) (Template.aux)
 \openout1 = `Template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 ("D:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count140
-\scratchdimen=\dimen140
+\scratchcounter=\count144
+\scratchdimen=\dimen153
 \scratchbox=\box60
-\nofMPsegments=\count141
-\nofMParguments=\count142
+\nofMPsegments=\count145
+\nofMParguments=\count146
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count143
-\MPscratchDim=\dimen141
-\MPnumerator=\count144
-\makeMPintoPDFobject=\count145
+\MPscratchCnt=\count147
+\MPscratchDim=\dimen154
+\MPnumerator=\count148
+\makeMPintoPDFobject=\count149
 \everyMPtoPDFconversion=\toks31
 ) ("D:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -469,33 +489,33 @@ File: UTF8.enc 2015/04/18 4.8.4
 ("D:\Program Files\MiKTeX 2.9\tex\latex\cjk\UTF8\UTF8.chr"
 File: UTF8.chr 2015/04/18 4.8.4
 )
-LaTeX Font Info:    Try loading font information for C70+song on input line 28.
+LaTeX Font Info:    Try loading font information for C70+song on input line 29.
 
 
 ("D:\Program Files\MiKTeX 2.9\tex\latex\cjk\UTF8\c70song.fd"
 File: c70song.fd 2015/04/18 4.8.4
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+LaTeX Font Info:    Try loading font information for U+msa on input line 29.
 
 ("D:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+LaTeX Font Info:    Try loading font information for U+msb on input line 29.
 
 ("D:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/65486_000/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<picts/octree.png, id=126, 537.50812pt x 260.47313pt>
+<picts/octree.png, id=132, 537.50812pt x 260.47313pt>
 File: picts/octree.png Graphic file (type png)
 <use picts/octree.png>
-Package pdftex.def Info: picts/octree.png  used on input line 97. on input line
- 97.
+Package pdftex.def Info: picts/octree.png  used on input line 101. on input lin
+e 101.
 Package pdftex.def Info: Requested size: 277.69987pt x 134.5724pt on input line
- 97.
- [2]
-Overfull \hbox (3.15428pt too wide) in paragraph at lines 141--142
+ 101.
+ [2] [3 <./picts/octree.png>]
+Overfull \hbox (3.15428pt too wide) in paragraph at lines 145--146
 []\OT1/cmr/m/n/10 ICP\C70/song/bx/n/10/65 π \C70/song/m/n/10/6c ’ \C70/song/bx/
 n/10/51 w \C70/song/bx/n/10/67 	 \C70/song/m/n/10/5b É \C70/song/m/n/10/76 Ñ \C
 70/song/m/n/10/5c @ \C70/song/m/n/10/96 P \C70/song/m/n/10/60 ' \C70/song/m/n/1
@@ -509,7 +529,7 @@ OT1/cmr/m/n/10 ICP\C70/song/bx/n/10/65 π
  []
 
 
-Overfull \hbox (12.71011pt too wide) in paragraph at lines 143--144
+Overfull \hbox (12.71011pt too wide) in paragraph at lines 147--148
 []\OT1/cmr/m/n/10 2011\C70/song/m/n/10/5e t \C70/song/m/n/10/ff  \C70/song/m/n
 /10/5f Æ \C70/song/bx/n/10/8f o \C70/song/m/n/10/63 – \C70/song/bx/n/10/51 ˙ \C
 70/song/bx/n/10/4e Ü   \C70/song/bx/n/10/79 Õ \C70/song/m/n/10/7e œ \C70/song/b
@@ -519,21 +539,8 @@ C70/song/m/n/10/6a ! \C70/song/m/n/10/57 ã \C70/song/bx/n/10/65 π \C70/song/m/n
  \OT1/cmr/m/n/10 KinectFusion
  []
 
-[3 <./picts/octree.png>]
-Overfull \hbox (10.01552pt too wide) in paragraph at lines 145--146
-\C70/song/m/n/10/7f : \C70/song/bx/n/10/4e O \C70/song/bx/n/10/54  \C70/song/m
-/n/10/74  \C70/song/m/n/10/76 Ñ \C70/song/m/n/10/8b ƒ \C70/song/m/n/10/4f 0 \C
-70/song/bx/n/10/65 π \C70/song/m/n/10/6c ’ \C70/song/m/n/10/ff  \C70/song/bx/n
-/10/54  \C70/song/m/n/10/80  \C70/song/m/n/10/76 Ñ\OT1/cmr/m/n/10 SDF\C70/son
-g/bx/n/10/51 ˝ \C70/song/bx/n/10/65 p \C70/song/m/n/10/66 / \C70/song/m/n/10/5d
- Ú \C70/song/m/n/10/77 Â \C70/song/m/n/10/76 Ñ \C70/song/m/n/10/ff  \C70/song/
-bx/n/10/4e  \C70/song/m/n/10/7f : \C70/song/bx/n/10/4e O \C70/song/m/n/10/5b û
- \C70/song/bx/n/10/65 ˆ \C70/song/m/n/10/60 ' \C70/song/m/n/10/30 \OT1/cmr/m/n
-/10 KinectFusion\C70/song/bx/n/10/53 Ô
- []
 
-
-Overfull \hbox (8.15202pt too wide) in paragraph at lines 150--151
+Overfull \hbox (8.15202pt too wide) in paragraph at lines 158--159
 \C70/song/bx/n/10/5b ˘ \C70/song/bx/n/10/4e é \C70/song/bx/n/10/6b œ \C70/song/
 m/n/10/7e ƒ \C70/song/bx/n/10/56 ˛ \C70/song/bx/n/10/50 œ \C70/song/bx/n/10/4e 
 - \C70/song/m/n/10/76 Ñ \C70/song/m/n/10/6d Ò \C70/song/m/n/10/5e ¶ \C70/song/b
@@ -547,11 +554,11 @@ OT1/cmr/m/n/10 RGB\C70/song/bx/n/10/56 ˛ \C70/song/bx/n/10/50 œ$\OML/cmm/m/it/1
  []
 
 
-Overfull \hbox (5.5352pt too wide) in paragraph at lines 150--151
+Overfull \hbox (5.5352pt too wide) in paragraph at lines 158--159
 \C70/song/m/n/10/5e v \C70/song/m/n/10/66   \C70/song/m/n/10/5c  \C70/song/m/n
 /10/52 0 \C70/song/m/n/10/5e s \C70/song/m/n/10/97 b$\OML/cmm/m/it/10 $\C70/so
 ng/bx/n/10/4e 
- \OT1/cmr/m/n/10 [11]\C70/song/m/n/10/30  \C70/song/m/n/10/57 ( \C70/song/m/n/
+ \OT1/cmr/m/n/10 [27]\C70/song/m/n/10/30  \C70/song/m/n/10/57 ( \C70/song/m/n/
 10/74  \C70/song/bx/n/10/60 Û ≈ \C70/song/bx/n/10/51 µ \C70/song/bx/n/10/4e  
 \C70/song/m/n/10/ff  \C70/song/m/n/10/66   \C70/song/m/n/10/5c  \C70/song/m/n
 /10/52 0 \C70/song/m/n/10/5e s \C70/song/m/n/10/97 b$\OML/cmm/m/it/10 $\C70/so
@@ -561,208 +568,225 @@ ng/bx/n/10/4e
 /cmm/m/it/10 I[]$\C70/song/bx/n/10/5b å
  []
 
-(Template.bbl [4] [5]) [6] (Template.aux) ) 
+[4] (Template.bbl [5] [6] [7]) [8] (Template.aux) ) 
 Here is how much of TeX's memory you used:
- 5440 strings out of 493312
- 73881 string characters out of 3138887
- 148901 words of memory out of 3000000
- 8804 multiletter control sequences out of 15000+200000
- 48504 words of font info for 182 fonts, out of 3000000 for 9000
+ 5634 strings out of 493312
+ 77507 string characters out of 3138887
+ 151751 words of memory out of 3000000
+ 8991 multiletter control sequences out of 15000+200000
+ 52014 words of font info for 195 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,29p,855b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\65486_000\AppData\Local\M
-iKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb55.pk> <C:\Users\6548
-6_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb
-69.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics
-\cyberb\dpi540\cyberb68.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\
-pk\modeless\zhmetrics\cyberb\dpi540\cyberb53.pk> <C:\Users\65486_000\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb95.pk> <C:\Users
-\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\c
-yberb5f.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhme
-trics\cyberb\dpi540\cyberb90.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\f
-onts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb87.pk> <C:\Users\65486_000\AppDa
-ta\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb57.pk> <C:\
-Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi
-720\cyberb6a.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless
-\zhmetrics\cyberb\dpi720\cyberb8e.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\
-2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb67.pk> <C:\Users\65486_000\
-AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb77.pk>
- <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyber
-b\dpi600\cyberb8c.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\mod
-eless\zhmetrics\cyberb\dpi600\cyberb81.pk> <C:\Users\65486_000\AppData\Local\Mi
-KTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb58.pk> <C:\Users\65486
-_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb9
-a.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\
-cyberb\dpi600\cyberb74.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\p
-k\modeless\zhmetrics\cyberb\dpi600\cyberb5d.pk> <C:\Users\65486_000\AppData\Loc
-al\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb6c.pk> <C:\Users\
-65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cy
-berb65.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmet
-rics\cyberb\dpi720\cyberb62.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fo
-nts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb75.pk> <C:\Users\65486_000\AppDat
-a\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb97.pk> <C:\U
-sers\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi7
-20\cyberb88.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\
-zhmetrics\cyberb\dpi720\cyberb76.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2
-.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb89.pk> <C:\Users\65486_000\A
-ppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb20.pk> 
-<C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb
-\dpi600\cyberb97.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\mode
-less\zhmetrics\cyberb\dpi600\cyberb7d.pk> <C:\Users\65486_000\AppData\Local\MiK
-TeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb53.pk> <C:\Users\65486_
-000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb8f
-.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\c
-yberb\dpi720\cyberb95.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk
-\modeless\zhmetrics\cyberb\dpi720\cyberb7a.pk> <C:\Users\65486_000\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb7e.pk> <C:\Users\6
-5486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyb
-erb4e.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetr
-ics\cyberb\dpi600\cyberb94.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fon
-ts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb71.pk> <C:\Users\65486_000\AppData
-\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb70.pk> <C:\Us
-ers\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi60
-0\cyberb99.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\z
-hmetrics\cyberb\dpi600\cyberb7f.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.
-9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb64.pk> <C:\Users\65486_000\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb54.pk> <
-C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\
-dpi600\cyberb6d.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\model
-ess\zhmetrics\cyberb\dpi600\cyberb8d.pk> <C:\Users\65486_000\AppData\Local\MiKT
-eX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb6a.pk> <C:\Users\65486_0
-00\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb7c.
-pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cy
-berb\dpi600\cyberb50.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\
-modeless\zhmetrics\cyberb\dpi600\cyberb82.pk> <C:\Users\65486_000\AppData\Local
-\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb83.pk> <C:\Users\65
-486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cybe
-rb96.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetri
-cs\cyberb\dpi600\cyberb68.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\font
-s\pk\modeless\zhmetrics\cyberb\dpi600\cyberb8e.pk> <C:\Users\65486_000\AppData\
-Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb5c.pk> <C:\Use
-rs\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600
-\cyberb53.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zh
-metrics\cyberb\dpi600\cyberb5f.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9
-\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb6e.pk> <C:\Users\65486_000\App
-Data\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb65.pk> <C
-:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\d
-pi600\cyberb6c.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modele
-ss\zhmetrics\cyberb\dpi600\cyberb73.pk> <C:\Users\65486_000\AppData\Local\MiKTe
-X\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb57.pk> <C:\Users\65486_00
-0\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb98.p
-k> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyb
-erb\dpi600\cyberb51.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\m
-odeless\zhmetrics\cyberb\dpi600\cyberb6b.pk> <C:\Users\65486_000\AppData\Local\
-MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb62.pk> <C:\Users\654
-86_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyber
-b5e.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetric
-s\cyberb\dpi600\cyberb91.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts
-\pk\modeless\zhmetrics\cyberb\dpi600\cyberb7e.pk> <C:\Users\65486_000\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb80.pk> <C:\User
-s\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\
-cyberb79.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhm
-etrics\cyberb\dpi600\cyberb30.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\
-fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb88.pk> <C:\Users\65486_000\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb72.pk> <C:
-\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dp
-i600\cyberb5b.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeles
-s\zhmetrics\cyberb\dpi600\cyberbff.pk> <C:\Users\65486_000\AppData\Local\MiKTeX
-\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb60.pk> <C:\Users\65486_000
-\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb76.pk
-> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cybe
-rb\dpi600\cyberb63.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\mo
-deless\zhmetrics\cyberb\dpi600\cyberb56.pk> <C:\Users\65486_000\AppData\Local\M
-iKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb61.pk> <C:\Users\6548
-6_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb
-8f.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics
-\cyberb\dpi600\cyberb90.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\
-pk\modeless\zhmetrics\cyberb\dpi600\cyberb4f.pk> <C:\Users\65486_000\AppData\Lo
-cal\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb59.pk> <C:\Users
-\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\c
-yberb7a.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhme
-trics\cyberb\dpi600\cyberb78.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\f
-onts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb95.pk> <C:\Users\65486_000\AppDa
-ta\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb4e.pk> <C:\
-Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi
-600\cyberb66.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless
-\zhmetrics\cyberb\dpi600\cyberb89.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\
-2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb67.pk> <C:\Users\65486_000\
-AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb7b.pk>
- <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyber
-b\dpi600\cyberb8b.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\mod
-eless\zhmetrics\cyberb\dpi540\cyberb54.pk> <C:\Users\65486_000\AppData\Local\Mi
-KTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb82.pk> <C:\Users\65486
-_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb8
-4.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\
-cyberb\dpi540\cyberb30.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\p
-k\modeless\zhmetrics\cyberb\dpi540\cyberb63.pk> <C:\Users\65486_000\AppData\Loc
-al\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb6a.pk> <C:\Users\
-65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cy
-berb7a.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmet
-rics\cyberb\dpi540\cyberb50.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fo
-nts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb6c.pk> <C:\Users\65486_000\AppDat
-a\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb75.pk> <C:\U
-sers\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi5
-40\cyberb52.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\
-zhmetrics\cyberb\dpi540\cyberbff.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2
-.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb56.pk> <C:\Users\65486_000\A
-ppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb61.pk> 
-<C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb
-\dpi540\cyberb4f.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\mode
-less\zhmetrics\cyberb\dpi540\cyberb5e.pk> <C:\Users\65486_000\AppData\Local\MiK
-TeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb6d.pk> <C:\Users\65486_
-000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb57
-.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\c
-yberb\dpi540\cyberb66.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk
-\modeless\zhmetrics\cyberb\dpi540\cyberb5b.pk> <C:\Users\65486_000\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb51.pk> <C:\Users\6
-5486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyb
-erb89.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetr
-ics\cyberb\dpi540\cyberb4e.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fon
-ts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb76.pk> <C:\Users\65486_000\AppData
-\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb8b.pk> <C:\Us
+ 41i,9n,29p,1032b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\65486_000\AppData
+\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb00.pk> <C:\Us
 ers\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi54
-0\cyberb62.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\z
-hmetrics\cyberb\dpi540\cyberb8f.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.
-9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb7e.pk> <C:\Users\65486_000\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb73.pk> <
+0\cyberb50.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\z
+hmetrics\cyberb\dpi540\cyberb22.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.
+9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb59.pk> <C:\Users\65486_000\Ap
+pData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb82.pk> <
 C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\
-dpi540\cyberb65.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\model
-ess\zhmetrics\cyberb\dpi540\cyberb7b.pk> <C:\Users\65486_000\AppData\Local\MiKT
-eX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb67.pk> <C:\Users\65486_0
-00\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb75.
+dpi600\cyberb85.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\model
+ess\zhmetrics\cyberb\dpi720\cyberb60.pk> <C:\Users\65486_000\AppData\Local\MiKT
+eX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb9c.pk> <C:\Users\65486_0
+00\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb55.
 pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cy
-berb\dpi600\cyberb52.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\
-modeless\zhmetrics\cyberb\dpi864\cyberb67.pk> <C:\Users\65486_000\AppData\Local
-\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi864\cyberb62.pk> <C:\Users\65
-486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi864\cybe
-rb91.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetri
-cs\cyberb\dpi864\cyberb7a.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\font
-s\pk\modeless\zhmetrics\cyberb\dpi864\cyberb7e.pk> <C:\Users\65486_000\AppData\
-Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi864\cyberb76.pk> <C:\Use
-rs\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi864
-\cyberb54.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zh
-metrics\cyberb\dpi864\cyberb56.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9
-\fonts\pk\modeless\zhmetrics\cyberb\dpi864\cyberb61.pk> <C:\Users\65486_000\App
-Data\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi864\cyberb4f.pk> <C
+berb\dpi600\cyberb69.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\
+modeless\zhmetrics\cyberb\dpi600\cyberb87.pk> <C:\Users\65486_000\AppData\Local
+\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb8e.pk> <C:\Users\65
+486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cybe
+rb57.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetri
+cs\cyberb\dpi720\cyberb6a.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\font
+s\pk\modeless\zhmetrics\cyberb\dpi720\cyberb8e.pk> <C:\Users\65486_000\AppData\
+Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb67.pk> <C:\Use
+rs\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540
+\cyberb68.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zh
+metrics\cyberb\dpi540\cyberb95.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9
+\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb90.pk> <C:\Users\65486_000\App
+Data\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb77.pk> <C
 :\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\d
-pi864\cyberb5e.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modele
-ss\zhmetrics\cyberb\dpi864\cyberb6d.pk> <C:\Users\65486_000\AppData\Local\MiKTe
-X\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi864\cyberb4e.pk> <C:\Users\65486_00
-0\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi864\cyberb57.p
-k><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><D:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><D:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr7.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pf
-b><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Template.pdf (6 pages, 508831 bytes).
+pi600\cyberb8c.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modele
+ss\zhmetrics\cyberb\dpi600\cyberb58.pk> <C:\Users\65486_000\AppData\Local\MiKTe
+X\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb5d.pk> <C:\Users\65486_00
+0\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb6c.p
+k> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyb
+erb\dpi720\cyberb65.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\m
+odeless\zhmetrics\cyberb\dpi720\cyberb62.pk> <C:\Users\65486_000\AppData\Local\
+MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb75.pk> <C:\Users\654
+86_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyber
+b97.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetric
+s\cyberb\dpi720\cyberb88.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts
+\pk\modeless\zhmetrics\cyberb\dpi720\cyberb76.pk> <C:\Users\65486_000\AppData\L
+ocal\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb89.pk> <C:\User
+s\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\
+cyberb74.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhm
+etrics\cyberb\dpi600\cyberb9a.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\
+fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb20.pk> <C:\Users\65486_000\AppD
+ata\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb97.pk> <C:
+\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dp
+i600\cyberb7d.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeles
+s\zhmetrics\cyberb\dpi720\cyberb53.pk> <C:\Users\65486_000\AppData\Local\MiKTeX
+\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb8f.pk> <C:\Users\65486_000
+\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb95.pk
+> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cybe
+rb\dpi720\cyberb7a.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\mo
+deless\zhmetrics\cyberb\dpi720\cyberb7e.pk> <C:\Users\65486_000\AppData\Local\M
+iKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi720\cyberb4e.pk> <C:\Users\6548
+6_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb
+94.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics
+\cyberb\dpi600\cyberb71.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\
+pk\modeless\zhmetrics\cyberb\dpi600\cyberb96.pk> <C:\Users\65486_000\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb99.pk> <C:\Users
+\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\c
+yberb7f.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhme
+trics\cyberb\dpi600\cyberb64.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\f
+onts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb54.pk> <C:\Users\65486_000\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb6d.pk> <C:\
+Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi
+600\cyberb8d.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless
+\zhmetrics\cyberb\dpi600\cyberb6a.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\
+2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb7c.pk> <C:\Users\65486_000\
+AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb50.pk>
+ <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyber
+b\dpi600\cyberb82.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\mod
+eless\zhmetrics\cyberb\dpi600\cyberb83.pk> <C:\Users\65486_000\AppData\Local\Mi
+KTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb81.pk> <C:\Users\65486
+_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb6
+8.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\
+cyberb\dpi600\cyberb5c.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\p
+k\modeless\zhmetrics\cyberb\dpi600\cyberb70.pk> <C:\Users\65486_000\AppData\Loc
+al\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb53.pk> <C:\Users\
+65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cy
+berb5f.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmet
+rics\cyberb\dpi600\cyberb6e.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fo
+nts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb65.pk> <C:\Users\65486_000\AppDat
+a\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb6c.pk> <C:\U
+sers\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi6
+00\cyberb73.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\
+zhmetrics\cyberb\dpi600\cyberb57.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2
+.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb98.pk> <C:\Users\65486_000\A
+ppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb51.pk> 
+<C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb
+\dpi600\cyberb6b.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\mode
+less\zhmetrics\cyberb\dpi600\cyberb62.pk> <C:\Users\65486_000\AppData\Local\MiK
+TeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb5e.pk> <C:\Users\65486_
+000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb91
+.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\c
+yberb\dpi600\cyberb7e.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk
+\modeless\zhmetrics\cyberb\dpi600\cyberb80.pk> <C:\Users\65486_000\AppData\Loca
+l\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb79.pk> <C:\Users\6
+5486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyb
+erb30.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetr
+ics\cyberb\dpi600\cyberb88.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fon
+ts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb72.pk> <C:\Users\65486_000\AppData
+\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb5b.pk> <C:\Us
+ers\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi60
+0\cyberbff.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\z
+hmetrics\cyberb\dpi600\cyberb60.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.
+9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb76.pk> <C:\Users\65486_000\Ap
+pData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb63.pk> <
+C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\
+dpi600\cyberb56.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\model
+ess\zhmetrics\cyberb\dpi600\cyberb61.pk> <C:\Users\65486_000\AppData\Local\MiKT
+eX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb8f.pk> <C:\Users\65486_0
+00\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb90.
+pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cy
+berb\dpi600\cyberb4f.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\
+modeless\zhmetrics\cyberb\dpi600\cyberb59.pk> <C:\Users\65486_000\AppData\Local
+\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb7a.pk> <C:\Users\65
+486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cybe
+rb78.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetri
+cs\cyberb\dpi600\cyberb95.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\font
+s\pk\modeless\zhmetrics\cyberb\dpi600\cyberb4e.pk> <C:\Users\65486_000\AppData\
+Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb66.pk> <C:\Use
+rs\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600
+\cyberb89.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zh
+metrics\cyberb\dpi600\cyberb67.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9
+\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb7b.pk> <C:\Users\65486_000\App
+Data\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb8b.pk> <C
+:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\d
+pi540\cyberb5c.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modele
+ss\zhmetrics\cyberb\dpi540\cyberb63.pk> <C:\Users\65486_000\AppData\Local\MiKTe
+X\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb60.pk> <C:\Users\65486_00
+0\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb96.p
+k> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyb
+erb\dpi540\cyberb91.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\m
+odeless\zhmetrics\cyberb\dpi540\cyberb7a.pk> <C:\Users\65486_000\AppData\Local\
+MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb30.pk> <C:\Users\654
+86_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyber
+b70.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetric
+s\cyberb\dpi540\cyberb72.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts
+\pk\modeless\zhmetrics\cyberb\dpi540\cyberb6b.pk> <C:\Users\65486_000\AppData\L
+ocal\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb6a.pk> <C:\User
+s\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\
+cyberb53.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhm
+etrics\cyberb\dpi540\cyberb5f.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\
+fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb8d.pk> <C:\Users\65486_000\AppD
+ata\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb79.pk> <C:
+\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dp
+i540\cyberb6c.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeles
+s\zhmetrics\cyberb\dpi540\cyberb97.pk> <C:\Users\65486_000\AppData\Local\MiKTeX
+\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb88.pk> <C:\Users\65486_000
+\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb54.pk
+> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cybe
+rb\dpi540\cyberb75.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\mo
+deless\zhmetrics\cyberb\dpi540\cyberb52.pk> <C:\Users\65486_000\AppData\Local\M
+iKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberbff.pk> <C:\Users\6548
+6_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb
+56.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics
+\cyberb\dpi540\cyberb61.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\
+pk\modeless\zhmetrics\cyberb\dpi540\cyberb4f.pk> <C:\Users\65486_000\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb5e.pk> <C:\Users
+\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\c
+yberb6d.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhme
+trics\cyberb\dpi540\cyberb57.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\f
+onts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb66.pk> <C:\Users\65486_000\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb5b.pk> <C:\
+Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi
+540\cyberb51.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless
+\zhmetrics\cyberb\dpi540\cyberb89.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\
+2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb4e.pk> <C:\Users\65486_000\
+AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb76.pk>
+ <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyber
+b\dpi540\cyberb8b.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\mod
+eless\zhmetrics\cyberb\dpi540\cyberb62.pk> <C:\Users\65486_000\AppData\Local\Mi
+KTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb8f.pk> <C:\Users\65486
+_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb7
+e.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\
+cyberb\dpi540\cyberb73.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\p
+k\modeless\zhmetrics\cyberb\dpi540\cyberb65.pk> <C:\Users\65486_000\AppData\Loc
+al\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cyberb7b.pk> <C:\Users\
+65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi540\cy
+berb67.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmet
+rics\cyberb\dpi600\cyberb75.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fo
+nts\pk\modeless\zhmetrics\cyberb\dpi600\cyberb52.pk> <C:\Users\65486_000\AppDat
+a\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi864\cyberb67.pk> <C:\U
+sers\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi8
+64\cyberb62.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\
+zhmetrics\cyberb\dpi864\cyberb5e.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2
+.9\fonts\pk\modeless\zhmetrics\cyberb\dpi864\cyberb91.pk> <C:\Users\65486_000\A
+ppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi864\cyberb4f.pk> 
+<C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb
+\dpi864\cyberb7a.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\mode
+less\zhmetrics\cyberb\dpi864\cyberb7e.pk> <C:\Users\65486_000\AppData\Local\MiK
+TeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi864\cyberb76.pk> <C:\Users\65486_
+000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\cyberb\dpi864\cyberb54
+.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk\modeless\zhmetrics\c
+yberb\dpi864\cyberb4e.pk> <C:\Users\65486_000\AppData\Local\MiKTeX\2.9\fonts\pk
+\modeless\zhmetrics\cyberb\dpi864\cyberb57.pk><D:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmbx10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmbx12.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmbx9.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmex10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10
+.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><D:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy7.pfb><D:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmtt9.pfb>
+Output written on Template.pdf (8 pages, 588910 bytes).
 PDF statistics:
- 1153 PDF objects out of 1200 (max. 8388607)
+ 1339 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

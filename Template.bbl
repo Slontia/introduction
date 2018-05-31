@@ -2,6 +2,16 @@
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 
+\bibitem{DBLP:conf/iros/AmbrusBFJ14}
+Ambrus, R., Bore, N., Folkesson, J., Jensfelt, P.: Meta-rooms: Building and
+  maintaining long term spatial models in a dynamic world. In: 2014 {IEEE/RSJ}
+  International Conference on Intelligent Robots and Systems, Chicago, IL, USA,
+  September 14-18, 2014. pp. 1854--1861 (2014)
+
+\bibitem{DBLP:journals/access/BanerjeeYA18}
+Banerjee, D., Yu, K., Aggarwal, G.: Robotic arm based 3d reconstruction test
+  automation. {IEEE} Access  6,  7206--7213 (2018)
+
 \bibitem{DBLP:journals/pami/BeslM92}
 Besl, P.J., McKay, N.D.: A method for registration of 3-d shapes. {IEEE} Trans.
   Pattern Anal. Mach. Intell.  14(2),  239--256 (1992),
@@ -16,6 +26,37 @@ Curless, B., Levoy, M.: A volumetric method for building complex models from
   range images. In: Proceedings of the 23rd Annual Conference on Computer
   Graphics and Interactive Techniques, {SIGGRAPH} 1996, New Orleans, LA, USA,
   August 4-9, 1996. pp. 303--312 (1996)
+
+\bibitem{DBLP:conf/icra/EndresHESCB12}
+Endres, F., Hess, J., Engelhard, N., Sturm, J., Cremers, D., Burgard, W.: An
+  evaluation of the {RGB-D} {SLAM} system. In: {IEEE} International Conference
+  on Robotics and Automation, {ICRA} 2012, 14-18 May, 2012, St. Paul,
+  Minnesota, {USA}. pp. 1691--1696 (2012)
+
+\bibitem{DBLP:journals/ral/FaulhammerABZFH17}
+Faulhammer, T., Ambrus, R., Burbridge, C., Zillich, M., Folkesson, J., Hawes,
+  N., Jensfelt, P., Vincze, M.: Autonomous learning of object models on a
+  mobile robot. {IEEE} Robotics and Automation Letters  2(1),  26--33 (2017)
+
+\bibitem{DBLP:conf/icra/FehrFDSGSC17}
+Fehr, M., Furrer, F., Dryanovski, I., Sturm, J., Gilitschenski, I., Siegwart,
+  R., Cadena, C.: Tsdf-based change detection for consistent long-term dense
+  reconstruction and dynamic object discovery. In: 2017 {IEEE} International
+  Conference on Robotics and Automation, {ICRA} 2017, Singapore, Singapore, May
+  29 - June 3, 2017. pp. 5237--5244 (2017)
+
+\bibitem{DBLP:conf/cvpr/FioraioTFSI15}
+Fioraio, N., Taylor, J., Fitzgibbon, A.W., di~Stefano, L., Izadi, S.:
+  Large-scale and drift-free surface reconstruction using online subvolume
+  registration. In: {IEEE} Conference on Computer Vision and Pattern
+  Recognition, {CVPR} 2015, Boston, MA, USA, June 7-12, 2015. pp. 4475--4483
+  (2015)
+
+\bibitem{DBLP:conf/icra/ForsterPS14}
+Forster, C., Pizzoli, M., Scaramuzza, D.: {SVO:} fast semi-direct monocular
+  visual odometry. In: 2014 {IEEE} International Conference on Robotics and
+  Automation, {ICRA} 2014, Hong Kong, China, May 31 - June 7, 2014. pp. 15--22
+  (2014)
 
 \bibitem{DBLP:conf/eccv/KahlerPM16}
 K{\"{a}}hler, O., Prisacariu, V.A., Murray, D.W.: Real-time large-scale dense
@@ -38,11 +79,45 @@ Kerl, C., Sturm, J., Cremers, D.: Dense visual {SLAM} for {RGB-D} cameras. In:
   2013 {IEEE/RSJ} International Conference on Intelligent Robots and Systems,
   Tokyo, Japan, November 3-7, 2013. pp. 2100--2106 (2013)
 
+\bibitem{DBLP:conf/rss/KlingensmithDSX15}
+Klingensmith, M., Dryanovski, I., Srinivasa, S., Xiao, J.: Chisel: Real time
+  large scale 3d reconstruction onboard a mobile device using spatially hashed
+  signed distance fields. In: Robotics: Science and Systems XI, Sapienza
+  University of Rome, Rome, Italy, July 13-17, 2015 (2015)
+
 \bibitem{DBLP:conf/cimaging/KubackiBBD12}
 Kubacki, D.B., Bui, H.Q., Babacan, S.D., Do, M.N.: Registration and integration
   of multiple depth images using signed distance function. In: Computational
   Imaging X, part of the IS{\&}T-SPIE Electronic Imaging Symposium, Burlingame,
   California, USA, January 23-24, 2012, Proceedings. p. 82960Z (2012)
+
+\bibitem{DBLP:conf/icra/KummerleGSKB11}
+K{\"{u}}mmerle, R., Grisetti, G., Strasdat, H., Konolige, K., Burgard, W.:
+  G\({}^{\mbox{2}}\)o: {A} general framework for graph optimization. In: {IEEE}
+  International Conference on Robotics and Automation, {ICRA} 2011, Shanghai,
+  China, 9-13 May 2011. pp. 3607--3613 (2011)
+
+\bibitem{DBLP:conf/scia/KyostilaCKH13}
+Ky{\"{o}}stil{\"{a}}, T., C., D.H., Kannala, J., Heikkil{\"{a}}, J.: Merging
+  overlapping depth maps into a nonredundant point cloud. In: Image Analysis,
+  18th Scandinavian Conference, {SCIA} 2013, Espoo, Finland, June 17-20, 2013.
+  Proceedings. pp. 567--578 (2013)
+
+\bibitem{DBLP:conf/aaai/LinKL18}
+Lin, C., Kong, C., Lucey, S.: Learning efficient point cloud generation for
+  dense 3d object reconstruction. In: Proceedings of the Thirty-Second {AAAI}
+  Conference on Artificial Intelligence, New Orleans, Louisiana, USA, February
+  2-7, 2018 (2018)
+
+\bibitem{DBLP:journals/jfr/LinGQGLWYS18}
+Lin, Y., Gao, F., Qin, T., Gao, W., Liu, T., Wu, W., Yang, Z., Shen, S.:
+  Autonomous aerial navigation using monocular visual-inertial fusion. J. Field
+  Robotics  35(1),  23--51 (2018)
+
+\bibitem{DBLP:journals/corr/abs-1710-07242}
+Millane, A., Taylor, Z., Oleynikova, H., Nieto, J.I., Siegwart, R., Cadena, C.:
+  {TSDF} manifolds: {A} scalable and consistent dense mapping approach. CoRR
+  abs/1710.07242 (2017)
 
 \bibitem{DBLP:conf/ismar/NewcombeIHMKDKSHF11}
 Newcombe, R.A., Izadi, S., Hilliges, O., Molyneaux, D., Kim, D., Davison, A.J.,
@@ -50,6 +125,22 @@ Newcombe, R.A., Izadi, S., Hilliges, O., Molyneaux, D., Kim, D., Davison, A.J.,
   dense surface mapping and tracking. In: 10th {IEEE} International Symposium
   on Mixed and Augmented Reality, {ISMAR} 2011, Basel, Switzerland, October
   26-29, 2011. pp. 127--136 (2011)
+
+\bibitem{DBLP:journals/tog/NiessnerZIS13}
+Nie{\ss}ner, M., Zollh{\"{o}}fer, M., Izadi, S., Stamminger, M.: Real-time 3d
+  reconstruction at scale using voxel hashing. {ACM} Trans. Graph.  32(6),
+  169:1--169:11 (2013)
+
+\bibitem{DBLP:conf/siggraph/PfisterZBG00}
+Pfister, H., Zwicker, M., van Baar, J., Gross, M.H.: Surfels: surface elements
+  as rendering primitives. In: Proceedings of the 27th Annual Conference on
+  Computer Graphics and Interactive Techniques, {SIGGRAPH} 2000, New Orleans,
+  LA, USA, July 23-28, 2000. pp. 335--342 (2000)
+
+\bibitem{DBLP:journals/corr/abs-1708-00783}
+Prisacariu, V.A., K{\"{a}}hler, O., Golodetz, S., Sapienza, M., Cavallari, T.,
+  Torr, P.H.S., Murray, D.W.: Infinitam v3: {A} framework for large-scale 3d
+  reconstruction with loop closure. CoRR  abs/1708.00783 (2017)
 
 \bibitem{DBLP:conf/eccv/RenR12}
 Ren, C.Y., Reid, I.D.: A unified energy minimization framework for model
@@ -69,10 +160,43 @@ Urban, S., Wursthorn, S., Leitloff, J., Hinz, S.: Multicol bundle adjustment:
   reconstruction for arbitrary multi-camera systems. International Journal of
   Computer Vision  121(2),  234--252 (2017)
 
+\bibitem{DBLP:journals/mta/VerykokouIADA18}
+Verykokou, S., Ioannidis, C., Athanasiou, G., Doulamis, N., Amditis, A.: 3d
+  reconstruction of disaster scenes for urban search and rescue. Multimedia
+  Tools Appl.  77(8),  9691--9717 (2018)
+
+\bibitem{DBLP:conf/iros/WagnerFB14}
+Wagner, R., Frese, U., B{\"{a}}uml, B.: Graph {SLAM} with signed distance
+  function maps on a humanoid robot. In: 2014 {IEEE/RSJ} International
+  Conference on Intelligent Robots and Systems, Chicago, IL, USA, September
+  14-18, 2014. pp. 2691--2698 (2014)
+
+\bibitem{DBLP:conf/icra/WhelanJKLM13}
+Whelan, T., Johannsson, H., Kaess, M., Leonard, J.J., McDonald, J.: Robust
+  real-time visual odometry for dense {RGB-D} mapping. In: 2013 {IEEE}
+  International Conference on Robotics and Automation, Karlsruhe, Germany, May
+  6-10, 2013. pp. 5724--5731 (2013)
+
+\bibitem{DBLP:conf/rss/WhelanLSGD15}
+Whelan, T., Leutenegger, S., Salas{-}Moreno, R.F., Glocker, B., Davison, A.J.:
+  Elasticfusion: Dense {SLAM} without {A} pose graph. In: Robotics: Science and
+  Systems XI, Sapienza University of Rome, Rome, Italy, July 13-17, 2015 (2015)
+
 \bibitem{Wurm2010OctoMap}
 Wurm, K.M., Hornung, A., Bennewitz, M., Stachniss, C., Burgard, W.: Octomap: A
   probabilistic, flexible, and compact 3d map representation for robotic
   systems. In: Proc. of the ICRA Workshop on Best Practice in 3D Perception and
   Modeling for Mobile Manipulation (2010)
+
+\bibitem{DBLP:conf/scia/YlimakiKH17}
+Ylim{\"{a}}ki, M., Kannala, J., Heikkil{\"{a}}, J.: Robust and practical depth
+  map fusion for time-of-flight cameras. In: Image Analysis - 20th Scandinavian
+  Conference, {SCIA} 2017, Troms{\o}, Norway, June 12-14, 2017, Proceedings,
+  Part {I}. pp. 122--134 (2017)
+
+\bibitem{DBLP:journals/corr/abs-1804-08912}
+Ylim{\"{a}}ki, M., Kannala, J., Heikkil{\"{a}}, J.: Accurate 3-d reconstruction
+  with {RGB-D} cameras using depth map fusion and pose refinement. CoRR
+  abs/1804.08912 (2018)
 
 \end{thebibliography}
