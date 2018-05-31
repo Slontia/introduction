@@ -12,6 +12,10 @@ Ambrus, R., Bore, N., Folkesson, J., Jensfelt, P.: Meta-rooms: Building and
 Banerjee, D., Yu, K., Aggarwal, G.: Robotic arm based 3d reconstruction test
   automation. {IEEE} Access  6,  7206--7213 (2018)
 
+\bibitem{DBLP:journals/jwscg/BendelsSK06}
+Bendels, G.H., Schnabel, R., Klein, R.: Detecting holes in point set surfaces.
+  Journal of {WSCG}  14(1-3),  89--96 (2006)
+
 \bibitem{DBLP:journals/pami/BeslM92}
 Besl, P.J., McKay, N.D.: A method for registration of 3-d shapes. {IEEE} Trans.
   Pattern Anal. Mach. Intell.  14(2),  239--256 (1992),
@@ -57,6 +61,15 @@ Forster, C., Pizzoli, M., Scaramuzza, D.: {SVO:} fast semi-direct monocular
   visual odometry. In: 2014 {IEEE} International Conference on Robotics and
   Automation, {ICRA} 2014, Hong Kong, China, May 31 - June 7, 2014. pp. 15--22
   (2014)
+
+\bibitem{DBLP:journals/vc/GuoXW18}
+Guo, X., Xiao, J., Wang, Y.: A survey on algorithms of hole filling in 3d
+  surface reconstruction. The Visual Computer  34(1),  93--103 (2018)
+
+\bibitem{DBLP:journals/cgf/JiaZYP18}
+Jia, S., Zhang, W., Yu, X., Pan, Z.: {CPU-GPU} parallel framework for real-time
+  interactive cutting of adaptive octree-based deformable objects. Comput.
+  Graph. Forum  37(1),  45--59 (2018)
 
 \bibitem{DBLP:conf/eccv/KahlerPM16}
 K{\"{a}}hler, O., Prisacariu, V.A., Murray, D.W.: Real-time large-scale dense
@@ -148,11 +161,21 @@ Ren, C.Y., Reid, I.D.: A unified energy minimization framework for model
   Demonstrations - Florence, Italy, October 7-13, 2012, Proceedings, Part {II}.
   pp. 72--82 (2012)
 
+\bibitem{DBLP:conf/icra/SenguptaS15}
+Sengupta, S., Sturgess, P.: Semantic octree: Unifying recognition,
+  reconstruction and representation via an octree constrained higher order
+  {MRF}. In: {IEEE} International Conference on Robotics and Automation, {ICRA}
+  2015, Seattle, WA, USA, 26-30 May, 2015. pp. 1874--1879 (2015)
+
 \bibitem{DBLP:conf/iccvw/SteinbruckerSC11}
 Steinbr{\"{u}}cker, F., Sturm, J., Cremers, D.: Real-time visual odometry from
   dense {RGB-D} images. In: {IEEE} International Conference on Computer Vision
   Workshops, {ICCV} 2011 Workshops, Barcelona, Spain, November 6-13, 2011. pp.
   719--722 (2011)
+
+\bibitem{Tran2015Extraction}
+Tran, T.T., Cao, V.T., Laurendeau, D.: Extraction of reliable primitives from
+  unorganized point clouds. 3d Research  6(4), ~44 (2015)
 
 \bibitem{DBLP:journals/ijcv/UrbanWLH17}
 Urban, S., Wursthorn, S., Leitloff, J., Hinz, S.: Multicol bundle adjustment:
@@ -165,11 +188,20 @@ Verykokou, S., Ioannidis, C., Athanasiou, G., Doulamis, N., Amditis, A.: 3d
   reconstruction of disaster scenes for urban search and rescue. Multimedia
   Tools Appl.  77(8),  9691--9717 (2018)
 
+\bibitem{DBLP:journals/dm/WagnerW09}
+Wagner, D.G., Wei, Y.: A criterion for the half-plane property. Discrete
+  Mathematics  309(6),  1385--1390 (2009)
+
 \bibitem{DBLP:conf/iros/WagnerFB14}
 Wagner, R., Frese, U., B{\"{a}}uml, B.: Graph {SLAM} with signed distance
   function maps on a humanoid robot. In: 2014 {IEEE/RSJ} International
   Conference on Intelligent Robots and Systems, Chicago, IL, USA, September
   14-18, 2014. pp. 2691--2698 (2014)
+
+\bibitem{DBLP:conf/smi/WeberHH10}
+Weber, C., Hahmann, S., Hagen, H.: Sharp feature detection in point clouds. In:
+  {SMI} 2010, Shape Modeling International Conference, Aix en Provence, France,
+  June 21-23 2010. pp. 175--186 (2010)
 
 \bibitem{DBLP:conf/icra/WhelanJKLM13}
 Whelan, T., Johannsson, H., Kaess, M., Leonard, J.J., McDonald, J.: Robust
@@ -198,5 +230,11 @@ Ylim{\"{a}}ki, M., Kannala, J., Heikkil{\"{a}}, J.: Robust and practical depth
 Ylim{\"{a}}ki, M., Kannala, J., Heikkil{\"{a}}, J.: Accurate 3-d reconstruction
   with {RGB-D} cameras using depth map fusion and pose refinement. CoRR
   abs/1804.08912 (2018)
+
+\bibitem{DBLP:conf/mm/ZhangW12}
+Zhang, C., Wang, W.: A robust and efficient shot boundary detection approach
+  based on fisher criterion. In: Proceedings of the 20th {ACM} Multimedia
+  Conference, {MM} '12, Nara, Japan, October 29 - November 02, 2012. pp.
+  701--704 (2012)
 
 \end{thebibliography}

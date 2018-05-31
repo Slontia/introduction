@@ -29,13 +29,13 @@
 \maketitle
 
 \begin{abstract}
-本篇文献综述所讲述的主要内容是基于深度传感器，利用TSDF和Octrees等表面生成算法，对不同的相机移动路径计算方法，以及模型生成方法进行了介绍，比较各个方法的特点和优劣。最后，本篇文献综述对三维立体重建技术的难点进行了总结，并指出对立体重建未来的发展方向。
+本篇文献综述所讲述的主要内容是基于深度传感器，利用TSDF和Octrees等表面生成算法，对不同的相机移动路径计算方法，以及模型生成方法进行了介绍，比较各个方法的特点和优劣。同时，本文还对三维重建中常常出现的空洞修补工作进行了简单的介绍。最后，本篇文献综述对三维立体重建技术的难点进行了总结，并指出对立体重建未来的发展方向。
 \keywords{三维立体重建技术, TSDF, Octree}
 \end{abstract}
 
 \section{Introduction}
 
-计算机视觉是一门研究如何通过视觉传感器捕捉到的信息，对物体进行识别、分析的学科，而三维立体重建技术正是其子领域。现如今，三维立体重建技术被广泛应用于文物保护、游戏开发、医学研究、地图绘制等领域，例如对受灾地区进行三维重建以辅助救援\cite{DBLP:journals/mta/VerykokouIADA18}，通过将传感器安装到机械臂上进行三维地图构建\cite{DBLP:journals/access/BanerjeeYA18}，以及机器人自主控制\cite{DBLP:journals/jfr/LinGQGLWYS18,DBLP:conf/iros/WagnerFB14}等等。
+计算机视觉是一门研究如何通过视觉传感器捕捉到的信息，对物体进行识别、分析的学科，而三维立体重建技术正是其子领域。现如今，三维立体重建技术被广泛应用于文物保护、游戏开发、医学研究、地图绘制等领域，例如对受灾地区进行三维重建以辅助救援\cite{DBLP:journals/mta/VerykokouIADA18}，通过将传感器安装到机械臂上进行三维地图构建\cite{DBLP:journals/access/BanerjeeYA18}，以及机器人自主控制\cite{DBLP:journals/jfr/LinGQGLWYS18,DBLP:conf/iros/WagnerFB14}等等。目前\cite{DBLP:journals/ral/FaulhammerABZFH17}提出了一种基于meta-room\cite{DBLP:conf/iros/AmbrusBFJ14}的机器人导航系统，但是这种系统需要进行一定量的重计算以及检查工作，而\cite{DBLP:conf/icra/FehrFDSGSC17}对此进行了改进。
 
 三维重建的主要目的是根据传感器对某一物体或场景捕获到的若干图像或一段视频，将物体或场景通过一系列技术手段还原成三维立体模型。模型的重建主要依赖于深度相机，这种相机可以同时获取RGB图像和深度图像，前者记录被拍摄位置的颜色、亮度、饱和度等信息，后者通过某处灰度值大小反映出对应位置与相机间的距离，以此可以得到被拍摄场景的单方向模型。
 
@@ -125,7 +125,7 @@ TSDF往往能得到较为准确的重建结果，如\cite{DBLP:conf/cvpr/Fioraio
 
 对于已经确定配对关系$(x_i,x_i)$的两组点云，通过调整$R$和$t$的值，使得公式\ref{cloudpoint_min}的值降到最低。对于指数$p$的取值，通常为$p=1$或$p=2$。
 
-然而，找到最符合实际变化的旋转量$R$和位移量$t$的前提是配对$(x_i,x_i)$的正确。为了提高配对的准确性，这里采用迭代的方式不断优化点云间的配对关系。主要步骤如下：
+然而，找到最符合实际变化的旋转量$R$和位移量$t$的前提是配对$(x_i,x_i)$的正确。为了提高配对的准确性，这里采用迭代的方式不断优化点云间的配对关系，如图\ref{ICPfig}所示。主要步骤如下：
 
 \begin{enumerate}
 \item{决定初始的配对关系}
@@ -133,6 +133,18 @@ TSDF往往能得到较为准确的重建结果，如\cite{DBLP:conf/cvpr/Fioraio
 \item{采用此种转换方式对原点云$x$进行转换，得到转换后的原点云}
 \item{重复步骤1\~{}3直到$E(R,t)$的值不发生明显变化}
 \end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+\subfigure[第一次配对]{
+\includegraphics[width=0.4\textwidth]{picts/first_pair.png}} \\
+\subfigure[第二次配对]{
+\includegraphics[width=0.4\textwidth]{picts/sec_pair.png}}
+\subfigure[最终结果]{
+\includegraphics[width=0.4\textwidth]{picts/third_pair.png}}
+\caption{使用ICP方法进行点云间点匹配}
+\label{ICPfig}
+\end{figure}
 
 当原点云与目标点云差异较小的时候，这种方法有较大概率找到全局最优解；但是当原点云和目标点云差异较大的时候，往往会使结果陷入局部最优解。
 
@@ -180,9 +192,28 @@ Kintinuous\cite{DBLP:conf/icra/WhelanJKLM13}提出了一种减小内存开销的
 
 Elasticfusion使用了surfels方法\cite{DBLP:conf/siggraph/PfisterZBG00}生成表面，由于surfels方法对表面信息的记录更为全面，因此当出现误差的是时候，可以很方便地进行检查或重计算，保证了算法的可靠性，因此结果较为理想。
 
+\section{空洞的检测}
+
+三维立体建模中常见的空洞包括三种：扁平空洞、岛状空洞以及缝隙空洞\cite{DBLP:journals/vc/GuoXW18}，如图\ref{holeType}所示。
+
+\begin{figure}[htbp]
+\centering
+\subfigure[扁平空洞]{
+\includegraphics[width=0.4\textwidth]{picts/flat.png}} \\
+\subfigure[岛状空洞]{
+\includegraphics[width=0.4\textwidth]{picts/island.png}}
+\subfigure[缝隙空洞]{
+\includegraphics[width=0.4\textwidth]{picts/gap.png}}
+\caption{在处理点云中常见的空洞类型}
+\label{holeType}
+\end{figure}
+
+对于空洞的检测，可以将点云中的点分为边缘点和内陆点两种，而边缘点所围成的区域即为空洞。判断边缘点和内陆点的基本方法主要有angle criterion\cite{DBLP:journals/jwscg/BendelsSK06}half-disc criterion\cite{DBLP:journals/dm/WagnerW09}，其它的还有一些基于这些方法的改进方法\cite{DBLP:conf/mm/ZhangW12}。除了需要检测空洞的存在，空洞的类型也需要进行判断，以决定空洞填补的策略。其中\cite{DBLP:conf/smi/WeberHH10}采用了尖锐特征检测的方法用于对较复杂的几何图形进行重建，而\cite{Tran2015Extraction}将杂乱的散点和基本的几何形状进行匹配，对空洞周围的点排列进行简化。
+
+
 \section{总结}
 
-本篇文献综述主要针对基于TSDF和Octrees等三维立体重建方法进行了介绍，这些方法都在其适合的领域内达到了较好的效果，如表1所示
+本篇文献综述主要针对基于TSDF和Octrees等三维立体重建方法进行了介绍，这些方法都在其适合的领域内达到了较好的效果，如表1所示。同时，本文还对三维立体重建过程中的常见问题——空洞的处理进行了简单介绍。
 
 \begin{table}
 \label{sum}
@@ -200,15 +231,12 @@ Elasticfusion& surfels& 较大尺寸& √\\
 \end{tabular}
 \end{table}
 
-
-由于深度相机全部根据RGB图像和深度图像对物体进行还原，无法对此外的信息进行获取，因此不同角度光照角度的变化、物体的运动等等都可能干扰到模型的生成。
-
-目前\cite{DBLP:journals/ral/FaulhammerABZFH17}提出了一种基于meta-room\cite{DBLP:conf/iros/AmbrusBFJ14}的机器人导航系统，但是这种系统需要进行一定量的重计算以及检查工作，而\cite{DBLP:conf/icra/FehrFDSGSC17}对此进行了改进。
+由于深度相机全部根据RGB图像和深度图像对物体进行还原，无法对此外的信息进行获取，因此不同角度光照角度的变化、物体的运动等等都可能干扰到模型的生成。同时，在生成模型的过程中，暂时很难对由于噪声产生的空洞和模型本身自带的空洞进行区分，这可能会导致修补了不该修补的空洞，破坏了模型的结构。
 
 未来，三维立体重建技术将重点投入在如何更佳高效、准确地重建模型，并对异常信息进行修正或屏蔽。同时，由于模型的生成高度依赖RGB图像和深度图像，因此提高图片精度可以有效应对更佳复杂的模型的重建。
 
 \bibliographystyle{splncs03}
 %\bibliographystyle{unsrt}
 \bibliography{reference}
-\end{CJK}{UTF8}{song}
+\end{CJK}
 \end{document} 
